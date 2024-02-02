@@ -1,5 +1,4 @@
 {% extends "templates/error.html" %}
-{% set announcement = 'error message' %}
 
 {% block login_widget %}
 {% endblock %}
@@ -11,6 +10,9 @@
   <h1>
     {{status_code}} : {{status_message}}
   </h1>
+  <h2>
+    To get access, please contact NDP administrators.
+  </h2>
   {% endblock h1_error %}
   {% block error_detail %}
   {% if message %}
