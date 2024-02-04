@@ -1,6 +1,9 @@
 {% extends "error.html" %}
 
+  {% block h1_error %}
+  {% endblock h1_error %}
+
 {% block error_detail %}
 <p>Please <a href = "mailto: ndp@sdsc.edu">contact</a> National Data Platform administrators to get JupyterHub access.</p>
-<img src="{{static_url("images/ndp_logo.png") }}">
+<!-- <img src="{{static_url("images/ndp_logo.png") }}"> -->
 {% endblock %}
