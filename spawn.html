@@ -3,7 +3,14 @@
   {% set announcement = announcement_spawn %}
 {% endif %}
 {% block main %}
-  <div class="container" style="background-image: url('{{ static_url("images/ndp-landing-image.png") }}'); background-position: center; background-size: contain; background-repeat: no-repeat; opacity: 0.1;">
+  <div class="container"
+       style="
+          background-image: url('{{ static_url("images/ndp-landing-image.png") }}');
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-color: rgba(255, 255, 255, 0.9);
+">
     {% block heading %}
       <div class="row text-center">
         <h1>NDP JupyterHub Server Options</h1>
